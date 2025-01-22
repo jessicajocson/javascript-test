@@ -50,3 +50,13 @@ NOTES:
 - Arrow Function is used to provider shorter and cleaner syntax
 - For the file reader, in this solution, I've used fs.readFile instead of fetch which makes server.js unnecessary. However, in practical scenarios, fetch and axios are commonly used in web applications to make HTTP requests to external APIs or servers
 - The decision to place Question 6 and 7 directly inside the handler function is because it avoids unnecessary complexity, making it easier to understand and maintain. For more complex operations or those that require reuse, creating separate functions would be appropriate, but for these straightforward tasks, direct inclusion is justified.
+
+
+## SETUP AND INSTALLATION:
+
+1. Install Node.js 18+ or above
+2. Make sure you are in the right directory `2nd-solution`
+3. For the 1st solution install the dependencies:
+    - `npm i`
+4. Run the the application
+    - `node test.js`
