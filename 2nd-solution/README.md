@@ -6,7 +6,9 @@
     - `require('fs').promises` - to be able to use the promise-based version of the fs
 
 2. Create the main function handler
-    - `handler` function returns a new Promise which performs a series of asynchronous tasks. First, it calls the `fetchData` function and then chains several methods to handle different parts
+    - `handler` is an asynchronous function that wraps the main logic in a `try...catch` block to handle any potential errors.
+    - `async/await` handles sequential asynchronous operations
+    - First, it calls the `fetchData` function and then chains several methods to handle different parts
     - The `resolve` function is used to signal the successful completion of the task, while `reject` is used to handle errors
 
 3. Create the fetchData function
@@ -46,7 +48,7 @@
 
 
 NOTES:
-- Here, I've used resolve and reject within a Promise to handle asynchronous operations more effectively.
+- Here, I've used  `async/await` to make the code readable and it naturally handles asynchronous tasks. By using `try...catch` it simplifies the error handling than `.then() .catch()`
 - Arrow Function is used to provider shorter and cleaner syntax
 - For the file reader, in this solution, I've used fs.readFile instead of fetch which makes server.js unnecessary. However, in practical scenarios, fetch and axios are commonly used in web applications to make HTTP requests to external APIs or servers
 - The decision to place Question 6 and 7 directly inside the handler function is because it avoids unnecessary complexity, making it easier to understand and maintain. For more complex operations or those that require reuse, creating separate functions would be appropriate, but for these straightforward tasks, direct inclusion is justified.
