@@ -1,0 +1,17 @@
+[
+    {
+      "name":"Julius",
+      "email":"julius@somemail.com",
+      "employeeType":"contractual"
+    },
+    {
+      "name":"Jack",
+      "email":"jack@somemail.com",
+      "employeeType":"regular"
+    },
+    {
+      "name":"Rod",
+      "email":"rod@somemail.com",
+      "employeeType":"regular"
+    }
+]
