@@ -70,7 +70,7 @@ const question5 = async (data, employeeType) => {
 
 const fetchData = async () => {
     try {
-        const response = await fetch('/Users/jessicajoy/Documents/Projects/bunch-app/javascript-test/data.json');
+        const response = await fetch('http://localhost:3000/data');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
